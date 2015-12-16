@@ -1,5 +1,5 @@
 {
-    "name": "studiobonito/silverstripe-typekit",
+    "name": "plato-creative/silverstripe-typekit",
     "description": "Provide TypeKit integration for SilverStripe CMS.",
     "type": "silverstripe-module",
     "keywords": [
@@ -21,12 +21,12 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "silverstripe/framework": "~3.1.0",
-        "silverstripe/cms": "~3.1.0"
+        "silverstripe/framework": "~3.2.*",
+        "silverstripe/cms": "~3.2.*"
     },
     "autoload": {
         "psr-4": {
-            "StudioBonito\\SilverStripe\\TypeKit\\": "src/"
+            "PlatoCreative\\SilverStripe\\TypeKit\\": "code/"
         }
     }
 }
