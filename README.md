@@ -31,7 +31,7 @@ Copy the 'typekit' folder to the root of your SilverStripe installation.
 ## Usage
 
 The module provides a global template variable `$TypeKit` that can be used to insert the kit code into any
-page template. This global variable uses the type kit ID specified in the CMS in the `Setings > Services > Type Kit` tab.
+page template. This global variable uses the type kit ID specified in the CMS in the `Setings > Appearance > Type Kit` tab.
 
 TypeKit suggests placing kit code in your document `<head>` as in the example below. However this module leaves that
 choice to the developer.
