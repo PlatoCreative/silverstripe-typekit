@@ -24,7 +24,7 @@ class TypeKitSiteConfigExtension extends \DataExtension
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldToTab(
-            'Root.Services.TypeKit',
+            'Root.Appearance.TypeKit',
             TextField::create(
                 'TypeKitID',
                 _t('TypeKitSiteConfigExtension.TYPEKITID', FormField::name_to_label('TypeKitID'))
