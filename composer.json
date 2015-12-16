@@ -20,9 +20,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "silverstripe/framework": "~3.2.*",
-        "silverstripe/cms": "~3.2.*"
+        "php": ">=5.3.3",
+        "silverstripe/cms": "3.2.*",
+        "silverstripe/framework": "3.2.*",
     },
     "autoload": {
         "psr-4": {
