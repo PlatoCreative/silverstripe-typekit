@@ -1,10 +1,5 @@
 # TypeKit Module
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
-
 ## Overview
 
 Provide TypeKit integration for SilverStripe CMS. Configure TypeKit ID via SiteConfig.
@@ -12,7 +7,7 @@ Allow TypeKit fonts inside HTMLEditorField and provide $TypeKit template variabl
 
 ## Requirements
 
-- SilverStripe 3.1 or newer.
+- SilverStripe 3.2.*
 
 ## Install
 
