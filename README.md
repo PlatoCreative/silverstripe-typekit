@@ -37,7 +37,7 @@ page template.
 ```
 
 ## Maintainers
- * Gorrie <gorriecoe@gmail.com>
+ * Web Team <web@PlatoCreative.co.nz>
 
 ## Bugtracker
 Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
