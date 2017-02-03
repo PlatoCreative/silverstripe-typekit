@@ -2,34 +2,32 @@
 
 ## Overview
 
-Provide TypeKit integration for SilverStripe CMS. Configure TypeKit ID via SiteConfig.
-Allow TypeKit fonts inside HTMLEditorField and provide $TypeKit template variable to inject javascript.
+Provide TypeKit integration for SilverStripe CMS allowing fonts inside HTMLEditorField and frontend.
 
 ## Requirements
 
-- SilverStripe 3.2.*
+- silverstripe/cms ^3.2
+- silverstripe/framework ^3.2
 
-## Install
-
-### Via Composer
+## Installation
 
 Run the following to add this module as a requirement and install it via composer.
 
-``` bash
-$ composer require studiobonito/silverstripe-typekit
+```
+$ composer require plato-creative/silverstripe-typekit
 ```
 
-### Manual
+Add your typekit ID to your config.yml.
 
-Copy the 'typekit' folder to the root of your SilverStripe installation.
+```
+TypeKit:
+  typekitID: ######
+```
 
 ## Usage
 
 The module provides a global template variable `$TypeKit` that can be used to insert the kit code into any
-page template. This global variable uses the type kit ID specified in the CMS in the `Setings > Appearance > Type Kit` tab.
-
-TypeKit suggests placing kit code in your document `<head>` as in the example below. However this module leaves that
-choice to the developer.
+page template.
 
 ``` html
 <head>
@@ -38,30 +36,24 @@ choice to the developer.
 </head>
 ```
 
-## Contributing
+## Maintainers
+ * Gorrie <gorriecoe@gmail.com>
+
+## Bugtracker
+Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
+existing issues to ensure yours is unique.
+
+If the issue does look like a new bug:
+
+ - Create a new issue
+ - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots
+ and screencasts can help here.
+ - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version,
+ Operating System, any installed SilverStripe modules.
+
+Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
+
+## Development and contribution
+If you would like to make contributions to the module please ensure you raise a pull request and discuss with the module maintainers.
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security
-
-If you discover any security related issues, please email support@studiobonito.co.uk instead of using the issue tracker.
-
-## Credits
-
-- [Tom Densham][link-author]
-- [All Contributors][link-contributors]
-
-## License
-
-The BSD-2-Clause License. Please see [License File](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/studiobonito/silverstripe-typekit.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-BSD-brightgreen.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/studiobonito/silverstripe-typekit.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/studiobonito/silverstripe-typekit.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/studiobonito/silverstripe-typekit
-[link-code-quality]: https://scrutinizer-ci.com/g/studiobonito/silverstripe-typekit
-[link-downloads]: https://packagist.org/packages/studiobonito/silverstripe-typekit
-[link-author]: https://github.com/nedmas
-[link-contributors]: ../../contributors

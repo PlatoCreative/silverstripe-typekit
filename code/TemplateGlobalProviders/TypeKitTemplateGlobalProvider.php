@@ -1,12 +1,9 @@
-<?php namespace StudioBonito\SilverStripe\TypeKit\TemplateGlobalProvider;
+<?php namespace PlatoCreative\SilverStripe\TypeKit\TemplateGlobalProvider;
 
-use SiteConfig;
+use Config;
 
 /**
  * Provide $TypeKit global template variable for inserting TypeKit javascript.
- *
- * @author       Tom Densham <tom.densham@studiobonito.co.uk>
- * @copyright    Studio Bonito Ltd.
  */
 class TypeKitTemplateGlobalProvider implements \TemplateGlobalProvider
 {
@@ -16,15 +13,28 @@ class TypeKitTemplateGlobalProvider implements \TemplateGlobalProvider
             'TypeKit' => array(
                 'method'  => 'getTypeKitScript',
                 'casting' => 'HTMLText'
+            ),
+            'TypeKitID' => array(
+                'method'  => 'getTypeKitID',
+                'casting' => 'Text'
             )
         );
     }
 
     public static function getTypeKitScript()
     {
-        $siteConfig = SiteConfig::current_site_config();
-
-        return "<script type=\"text/javascript\" src=\"//use.typekit.net/{$siteConfig->TypeKitID}.js\"></script>
-            <script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script>";
+        $typekitID = Config::inst()->get('TypeKit', 'typekitID');
+        if (isset($typekitID)) {
+            return "<script type=\"text/javascript\" src=\"//use.typekit.net/{$typekitID}.js\"></script>
+                <script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script>";
+        }
     }
-} 
+
+    public static function getTypeKitID()
+    {
+        $typekitID = Config::inst()->get('TypeKit', 'typekitID');
+        if (isset($typekitID)) {
+            return $typekitID;
+        }
+    }
+}

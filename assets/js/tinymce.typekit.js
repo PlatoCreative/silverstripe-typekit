@@ -15,16 +15,6 @@
 
                 doc.getElementsByTagName('head')[0].appendChild(script);
             });
-        },
-
-        getInfo: function () {
-            return {
-                longname: 'TypeKit Module',
-                author: 'Studio Bonito Ltd',
-                authorurl: 'http://www.studiobonito.co.uk',
-                infourl: 'http://www.studiobonito.co.uk',
-                version: '1.0.0'
-            };
         }
     });
 

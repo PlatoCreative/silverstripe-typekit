@@ -3,26 +3,26 @@
     "description": "Provide TypeKit integration for SilverStripe CMS.",
     "type": "silverstripe-module",
     "keywords": [
-        "studiobonito",
+        "PlatoCreative",
         "silverstripe-typekit",
         "silverstripe",
         "typography",
         "typekit"
     ],
-    "homepage": "https://github.com/studiobonito/silverstripe-typekit",
+    "homepage": "https://github.com/PlatoCreative/silverstripe-typekit",
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Tom Densham",
-            "email": "tom.densham@studiobonito.co.uk",
-            "homepage": "http://www.studiobonito.co.uk",
+            "name": "Web team",
+            "email": "web@PlatoCreative.co.nz",
+            "homepage": "http://www.PlatoCreative.co.nz",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "silverstripe/cms": "~3.1",
-        "silverstripe/framework": "~3.1"
+        "silverstripe/cms": "~3.5",
+        "silverstripe/framework": "~3.5"
     },
     "autoload": {
         "psr-4": {
