@@ -21,8 +21,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "silverstripe/cms": "~3.5",
-        "silverstripe/framework": "~3.5"
+        "silverstripe/cms": "^3.5",
+        "silverstripe/framework": "^3.5"
     },
     "autoload": {
         "psr-4": {
