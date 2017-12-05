@@ -25,7 +25,8 @@ class TypeKitTemplateGlobalProvider implements \TemplateGlobalProvider
     {
         $typekitID = Config::inst()->get('TypeKit', 'typekitID');
         if (isset($typekitID)) {
-            return "<link rel=\"stylesheet\" href=\"https://use.typekit.net/{$typekitID}.css\">";
+            return "<script type=\"text/javascript\" src=\"//use.typekit.net/{$typekitID}.js\"></script>
+                    <script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script>";
         }
     }
 
