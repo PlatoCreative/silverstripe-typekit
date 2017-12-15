@@ -1,3 +1,6 @@
+# SS4 unsupport
+This module will not be updated to SS4.  We recommend using [silverstripe webfonts](https://github.com/gorriecoe/silverstripe-webfonts).
+
 # TypeKit Module
 
 ## Overview
